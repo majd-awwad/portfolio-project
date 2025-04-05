@@ -1,0 +1,77 @@
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+
+.contact {
+    box-shadow: inset -1px 0px 90px 0.1rem rgb(229, 230, 231);
+    // margin-bottom: $larger-spacing-unit;
+    padding: $large-spacing-unit;
+    border-radius: $small-spacing-unit;
+    @include flex-center;
+
+    position: relative;
+    transform: translateY(2*$large-spacing-unit);
+    z-index: 11;
+    background-color: $white-background;
+}
+
+.contact__information-header,
+.contact__information-text,
+.contact__information-block {
+    margin-bottom: $spacing-unit;
+}
+
+.contact__information-header {
+    font-size: $large-font-size;
+    color: $header-clr;
+}
+
+.contact__information-text {
+    color: $section-text-clr;
+}
+
+.contact__information-block {
+    padding: $spacing-unit;
+}
+
+.contact__information-block-header {
+    font-weight: normal;
+    color: $paragraph-color;
+    font-size: $small-font-size;
+    margin-bottom: $small-spacing-unit;
+}
+
+.contact__information-block-info {
+    font-weight: bold;
+    color: $header-clr;
+    font-size: $btn-font-size;
+}
+
+.contact__form-text {
+    margin-bottom: $spacing-unit;
+    color: $section-text-clr;
+}
+
+.contact__form-input-wrapper {
+    @include flex-center;
+    flex-flow: column nowrap;
+    align-items: start;
+    flex: 1;
+}
+
+.contact__form-label {
+    color: $paragraph-color;
+    margin: $spacing-unit 0 $smaller-spacing-unit 0;
+}
+
+.contact__form-input {
+    outline: unset;
+    border: unset;
+    border-bottom: 2px solid $card-border-clr;
+    width: 90%;
+    font-size: $small-font-size;
+}
+
+.contact__form-submit-btn {
+    margin-top: $large-spacing-unit;
+    font-weight: bold;
+}

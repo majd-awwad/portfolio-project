@@ -1,0 +1,75 @@
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato";
+}
+
+/* Reapply the pointer cursor for anchor tags */
+a, button, input[type=submit], input[type=reset] {
+  cursor: pointer;
+  text-decoration: none;
+  border: 0;
+}
+
+/* Remove list styles (bullets/numbers) */
+ol, ul, menu, summary {
+  list-style: none;
+}
+
+/* revert the 'white-space' property for textarea elements on Safari */
+textarea {
+  white-space: revert;
+}
+
+.container-80 {
+  width: 80%;
+  margin-left: 10%;
+}
+
+@media (max-width: 768px) {
+  .container-80 {
+    width: 90%;
+    margin-left: 5%;
+  }
+}
+.normal-btn {
+  padding: 1rem;
+  background-color: #A53DFF;
+  color: #FFF !important;
+  border-radius: 0.25rem;
+  text-align: center;
+}
+.normal-btn--hover:hover {
+  background-color: #7B61FF;
+}
+
+html,
+body {
+  scroll-behavior: smooth !important;
+  background-color: #FFF;
+}
+
+p {
+  color: #556070;
+}
+
+.border-btn {
+  padding: 1rem;
+  background-color: #FFF;
+  color: #A53DFF;
+  border: 2px solid #A53DFF;
+  border-radius: 0.25rem;
+  text-align: center;
+  font-weight: bold;
+}
+.border-btn * {
+  color: #FFF;
+}
+.border-btn--hover:hover {
+  border-color: #7B61FF;
+  color: #7B61FF;
+}/*# sourceMappingURL=base.css.map */

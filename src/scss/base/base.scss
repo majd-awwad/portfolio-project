@@ -1,0 +1,55 @@
+@use 'resets';
+@use '../utils/variables' as *;
+
+.container-80 {
+    width: 80%;
+    margin-left: 10%;
+}
+
+@media (max-width: 768px) {
+    .container-80 {
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+.normal-btn {
+    padding: $spacing-unit;
+    background-color: $primary-clr;
+    color: $white-text-clr !important;
+    border-radius: calc($small-spacing-unit / 2);
+    text-align: center;
+
+    &--hover:hover {
+        background-color: $primary-hover-clr;
+    }
+}
+
+html,
+body {
+    scroll-behavior: smooth !important;
+    background-color: $white-background;
+}
+
+p {
+    color: $paragraph-color;
+}
+
+.border-btn {
+    padding: $spacing-unit;
+    background-color: $white-background;
+    color: $primary-clr;
+    border: 2px solid $primary-clr;
+    border-radius: calc($small-spacing-unit / 2);
+    text-align: center;
+    font-weight: bold;
+
+    * {
+        color: $white-text-clr;
+    }
+
+    &--hover:hover {
+        border-color: $primary-hover-clr;
+        color: $primary-hover-clr;
+    }
+}

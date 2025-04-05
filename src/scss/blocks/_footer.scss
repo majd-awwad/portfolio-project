@@ -1,0 +1,16 @@
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+
+.footer {
+    @include flex-center;
+    background-color: $footer-background-clr;
+    padding: calc(2*$larger-spacing-unit) 0 $large-spacing-unit 0;
+
+    position: relative;
+    z-index: 10;
+}
+
+.footer__copyright {
+    color: $white-text-clr;
+    font-size: $medium-font-size;
+}

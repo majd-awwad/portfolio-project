@@ -1,0 +1,26 @@
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+    margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato';
+}
+
+/* Reapply the pointer cursor for anchor tags */
+a, button, input[type=submit], input[type=reset] {
+    cursor: pointer;
+    text-decoration: none;
+    border: 0;
+}
+
+/* Remove list styles (bullets/numbers) */
+ol, ul, menu, summary {
+    list-style: none;
+}
+
+/* revert the 'white-space' property for textarea elements on Safari */
+textarea {
+    white-space: revert;
+}
